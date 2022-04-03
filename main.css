@@ -1,0 +1,20 @@
+body {font-family: Arial, Helvetica, sans-serif;
+      font-size: 50;
+      background-color: beige;}
+em {font-weight: bold;
+    color: blue;}
+p {font-size: 10pt;
+   color: black;
+   text-align: justify;}
+nav ul input {background-color: lightgreen;
+              width: 5em;
+              height: 2em;
+              border-width: thin;
+              margin: 0;
+              padding: 0;}
+ul input {background-color: rgb(221, 105, 105);
+          width: 5em;
+          height: 2em;
+          border-width: thin;
+          margin: 0;
+          padding: 0;}

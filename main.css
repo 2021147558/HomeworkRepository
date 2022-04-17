@@ -1,11 +1,14 @@
 body {font-family: Arial, Helvetica, sans-serif;
       font-size: 50;
-      background-color: beige;}
+      background-color: beige;
+      text-align: center}
 em {font-weight: bold;
-    color: blue;}
+    color: blue;
+   }
 p {font-size: 10pt;
    color: black;
-   text-align: justify;}
+   text-align: center;
+  }
 nav ul input {background-color: lightgreen;
               width: 5em;
               height: 2em;
@@ -17,4 +20,116 @@ ul input {background-color: rgb(221, 105, 105);
           height: 2em;
           border-width: thin;
           margin: 0;
-          padding: 0;}
+          padding: 0;
+        }
+
+#box {
+    width: 400px;
+    height: 100px;
+    margin-top: -10px;
+    background-color: aqua;
+}
+
+img {
+    margin: 100px;
+    transition: transform 2s;
+}
+img:hover{
+    transform: rotate(360deg) scale(2,2);
+}
+h2 {
+    animation-name: moveheader;
+    animation-duration: 2s;
+}
+@keyframes moveheader
+    {
+        0% { width: 200%;}
+        100% { width: 100%;}
+    }
+
+.navigation{
+    display: flex;
+    background-color: #333;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.navigation a {
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.navigation a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title{
+    flex: 100%;
+    background-color: lightgrey;
+}
+
+.product1{
+    flex: 25%;
+    background-color: pink;
+}
+
+.product2{
+    flex: 25%;
+    background-color: skyblue;
+}
+
+.product3{
+    flex: 25%;
+    background-color: yellow;
+}
+
+.product4{
+    flex: 25%;
+    background-color: lightgreen;
+}
+
+.end {
+    padding: 1px;
+    text-align: center;
+    background-color: orange;
+}
+
+@media (max-width: 480px){
+    .product1{
+        flex: 100%;
+    }
+    .product2{
+        flex: 100%;
+    }
+    .product3{
+        flex: 100%;
+    }
+    .product4{
+        flex: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    .product1{
+        flex: 50%;
+    }
+    .product2{
+        flex: 50%;
+    }
+    .product3{
+        flex: 50%;
+    }
+    .product4{
+        flex: 50%;
+    }
+}
